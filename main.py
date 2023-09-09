@@ -14,12 +14,15 @@ person1.is_adult()
 
 # PART 3
 class Person2:
-    def __init__(self, name, age):
+    def __init__(self, name, age,hobbies):
         self.name = name
         self.age = age
+        self.hobbies = hobbies
+    
 
     def __str__(self):
-        return f"My name is {self.name} and I am {self.age} years old "
-    
-person22 = Person2("sarah", 19)
+        return f"My name is {self.name} and I am {self.age} years old , she likes {self.hobbies[0]}, {self.hobbies[1]} and {self.hobbies[2]}"
+
+hobby = ["coding", "editing","baking"] #bonus
+person22 = Person2("sarah", 19, hobby)
 print(person22)
